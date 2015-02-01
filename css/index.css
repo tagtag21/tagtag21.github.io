@@ -3,3 +3,7 @@
            background-color: #0B0B3B; /*темно синий*/
 		   color: #81F7F3;                      /*неоновый*/
            }
+		   
+p.green_text {
+                      color: green;
+					   }
