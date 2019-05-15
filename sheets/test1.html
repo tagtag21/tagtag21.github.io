@@ -1,9 +1,18 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
- </head>
- <body>
-   <iframe src="https://events.webinar.ru/319/2349805></iframe>
- </body>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Webinar flash test</title>
+   <script src="https://events.webinar.ru/iframe.js"></script> <!-- подключаем скрипт -->
+</head>
+<body>
+<div id="webinar-iframe"></div> <!-- этот элемент будет заменен на iframe -->
+<script>
+   var frame = new WBNR.Frame('webinar-iframe' /* id элемента, который будет заменен на iframe */, {
+       src: 'https://events.webinar.ru/319/2349805/4c1bda953610258aa39bfbd5b5c8ead8', // ссылка на вебинар
+       swfUrl: 'https://tagtag21.github.io/composite.swf', // ссылка на swf
+       width: 1280, // ширина - необязательный параметр, по умолчанию 1280
+       height: 800 // высота - необязательный параметр, по умолчанию 800
+   });
+</script>
+</body>
 </html>
