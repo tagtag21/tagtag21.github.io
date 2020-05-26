@@ -10,8 +10,8 @@
 $eventKey = "efeeiw3n"; // Уникальный ключ трансляции
 $userName = "TESTNAME"; // Имя пользователя
 $userRegistrationData = [
-    "unik" => 666, // Уник номер
-    "surname" => "Фамилия", // Фамилия
+    "unik" => 666, // Уник номер
+    "surname" => "Фамилия", // Фамилия
 		"name" => "Имя", // Имя пользователя
 		"patronymic" => "Отчество", // Отчество	
 ];
@@ -20,7 +20,7 @@ $userRegistrationData = [
 type="text/javascript"
 data-comdi-event="<?=$eventKey?>"
 data-login="<?php=$userName?>"
-data-registration="<?php=urlencode(json_encode($userRegistrationData))?>"
+data-registration="<?php=json_encode($userRegistrationData)?>"
 ></script>
    </body>
 </html>
