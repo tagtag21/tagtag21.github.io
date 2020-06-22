@@ -6,21 +6,8 @@
   <link type="text/css" rel="stylesheet" href="../css/index.css">	
  </head>
    <body>
-<?php
-$eventKey = "efeeiw3n"; // Уникальный ключ трансляции
-$userName = "TESTNAME"; // Имя пользователя
-$userRegistrationData = [
-    "unik" => 666, // Уник номер
-    "surname" => "Фамилия", // Фамилия
-		"name" => "Имя", // Имя пользователя
-		"patronymic" => "Отчество", // Отчество	
-];
-?>
-<script src="https://broadcast.comdi.com/player/js/embed.min.js"
-type="text/javascript"
-data-comdi-event="<?=$eventKey?>"
-data-login="<?php=$userName?>"
-data-registration="<?php=json_encode($userRegistrationData)?>"
-></script>
+<!-- Start of webinarsupport Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=aacdf768-5194-4091-9d75-068aaee01ebf"> </script>
+<!-- End of webinarsupport Zendesk Widget script -->
    </body>
 </html>
