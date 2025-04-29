@@ -2,28 +2,44 @@
 <html>
  <head>
   <meta charset="utf-8">
- 	<title>TEST</title>
-  <link type="text/css" rel="stylesheet" href="../css/index.css">
- <script>
-  !(function () {
-    function t() {
-      var t = document.createElement('script');
-      var h = (Math.random() * (99999 - 00001)).toFixed();
-      (t.type = 'module'), (t.async = !0), 
-      (t.src = 'https://evahelper.ru/build/main.js?h=' + h), document.head.appendChild(t);
+  <title>TEST</title>
+  <style>
+    body {
+      background-color: #001a33; /* Темно-синий фон */
+      color: #00ffff; /* Неоново-зеленый текст */
+      font-family: 'Orbitron', sans-serif; /* Неоновый шрифт */
+      margin: 0;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Неоновая тень */
     }
-    'complete' == document.readyState
-      ? t()
-      : window.attachEvent
-      ? window.attachEvent('onload', t)
-      : window.addEventListener('load', t, !1);
-  })();
-   </script>
+    .text-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+  </style>
+  <link type="text/css" rel="stylesheet" href="../css/index.css">
+  <script>
+   !(function () {
+     function t() {
+       var t = document.createElement('script');
+       var h = (Math.random() * (99999 - 00001)).toFixed();
+       (t.type = 'module'), (t.async = !0), 
+       (t.src = 'https://evahelper.ru/build/main.js?h=' + h), document.head.appendChild(t);
+     }
+     'complete' == document.readyState
+       ? t()
+       : window.attachEvent
+       ? window.attachEvent('onload', t)
+       : window.addEventListener('load', t, !1);
+   })();
+  </script>
  </head>
-   <body>
-    test eva azybm@any.pink
-    yegay@any.pink
-
-    <iframe src="https://ftr-4.mts-link.ru/j/236503/1108294347" width="1024" height="800" frameborder="0" style="border:none" allow="camera;microphone;fullscreen" sandbox="allow-same-origin allow-downloads allow-scripts allow-popups allow-forms"></iframe>
-   </body>
+ <body>
+  <div class="text-container">
+   <h1>test eva</h1>
+   <p>azybm@any.pink</p>
+   <p>yegay@any.pink</p>
+  </div>
+ </body>
 </html>
